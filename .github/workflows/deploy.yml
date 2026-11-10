@@ -1,8 +1,7 @@
 name: Deploy static portfolio to GitHub Pages
 
+# Hanya manual. Aktifkan push otomatis saat repo siap dipublikasikan.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:

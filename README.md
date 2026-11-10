@@ -2,9 +2,9 @@
 
 Portofolio pribadi **Alfonsus Ronaldy Hidayat** (Sistem Informasi, Universitas Multimedia Nusantara, Jakarta), bertema perbatasan akhir 1800-an dengan nama tema **DUSTY TRAIL PORTFOLIO**. Situs statis: HTML5, CSS3, JavaScript ES modules, tanpa build step.
 
-**Status: beta.** Konten disarikan dari CV pemilik. Foto profil, gambar proyek, tautan sosial, CV unduhan, dan endpoint form belum diisi.
+**Status: beta, repository saja.** Belum dipublikasikan sebagai website; GitHub Pages dimatikan dan workflow deploy hanya berjalan manual. Konten disarikan dari CV pemilik. Foto profil, gambar proyek, tautan sosial, CV unduhan, dan endpoint form belum diisi.
 
-**Situs:** https://suprill.github.io/Porto_Beta/ (aktif setelah GitHub Pages selesai deploy).
+Untuk melihatnya, jalankan secara lokal (lihat **Menjalankan lokal**).
 
 ## Preview
 
@@ -142,7 +142,9 @@ node check.mjs --sync-meta
 
 Perintah ini menyelaraskan title, description, Open Graph, dan canonical ke HTML. Isi `seo.url` dengan URL publik terlebih dahulu supaya gambar Open Graph menjadi URL absolut. Ini langkah publikasi **opsional**, bukan build step wajib. Ulangi setelah perubahan SEO; data pribadi tetap diedit hanya di `data.js`.
 
-## Git dan deploy GitHub Pages
+## Git dan deploy GitHub Pages (opsional, belum dipakai)
+
+Bagian ini hanya panduan untuk nanti. Beta ini sengaja tidak dideploy. Untuk mempublikasikan: lakukan langkah 3-4, kembalikan trigger `push` pada `.github/workflows/deploy.yml`, lalu jalankan workflow.
 
 1. Buat repository kosong di GitHub. Repository ini bernama `Porto_Beta`. Untuk GitHub Free, gunakan repository publik.
 2. Dari folder proyek jalankan:
@@ -160,7 +162,7 @@ Perintah ini menyelaraskan title, description, Open Graph, dan canonical ke HTML
 4. Pilih **Source: GitHub Actions**.
 5. Buka tab **Actions**, pilih workflow **Deploy static portfolio to GitHub Pages**, lalu **Run workflow** pada branch `main`. Bila push awal gagal sebelum Pages diaktifkan, jalankan ulang setelah langkah 4.
 6. Tunggu workflow berhasil. URL tersedia pada environment `github-pages` dan halaman Settings → Pages.
-7. Situs tersedia di `https://suprill.github.io/Porto_Beta/`.
+7. Setelah berhasil, situs tersedia di `https://suprill.github.io/Porto_Beta/`.
 8. Setiap push berikutnya ke `main` otomatis memperbarui situs.
 
 Workflow hanya menyalin `index.html`, `assets/`, `.nojekyll`, dan `LICENSE` ke artifact publik. Tidak memerlukan token rahasia tambahan; izin Pages memakai token bawaan GitHub.
