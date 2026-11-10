@@ -2,7 +2,7 @@
 
 Portofolio pribadi **Alfonsus Ronaldy Hidayat** (Sistem Informasi, Universitas Multimedia Nusantara, Jakarta), bertema perbatasan akhir 1800-an dengan nama tema **DUSTY TRAIL PORTFOLIO**. Situs statis: HTML5, CSS3, JavaScript ES modules, tanpa build step.
 
-**Status: beta, repository saja.** Belum dipublikasikan sebagai website; GitHub Pages dimatikan dan workflow deploy hanya berjalan manual. Konten disarikan dari CV pemilik dan repository GATE pilihan pemilik. Foto profil, gambar Proxmox, tautan sosial, CV unduhan, dan endpoint form belum diisi.
+**Status: beta, repository saja.** Belum dipublikasikan sebagai website; GitHub Pages dimatikan dan workflow deploy hanya berjalan manual. Konten disarikan dari CV pemilik dan repository GATE pilihan pemilik. Foto profil, tautan sosial, CV unduhan, dan endpoint form belum diisi.
 
 Untuk melihatnya, jalankan secara lokal (lihat **Menjalankan lokal**).
 
@@ -10,7 +10,7 @@ Untuk melihatnya, jalankan secara lokal (lihat **Menjalankan lokal**).
 
 ![Tampilan awal portofolio: hero dengan lanskap gurun senja](assets/img/preview.png)
 
-Gambar di atas adalah snapshot tampilan awal (hero) saat portofolio dibuka, diambil pada layar 1440 × 900. Jalankan server lokal untuk melihat lanskap senja, jurnal sepia, inventaris, poster interaktif, peta perjalanan, dan telegram. Identitas, pendidikan, skill dasar, pengalaman ISFEST, proyek Proxmox Home Server, dan email disarikan dari CV **Alfonsus Ronaldy Hidayat**. Foto profil dan pratinjau Proxmox masih placeholder; URL sosial, repository Proxmox, serta endpoint form belum diisi. Sertifikat kosong karena tidak tercantum di CV. Nomor telepon, alamat rumah, dan PDF CV belum dipublikasikan.
+Gambar di atas adalah snapshot tampilan awal (hero) saat portofolio dibuka, diambil pada layar 1440 × 900. Jalankan server lokal untuk melihat lanskap senja, jurnal sepia, inventaris, poster interaktif, peta perjalanan, dan telegram. Identitas, pendidikan, skill dasar, pengalaman ISFEST, proyek Proxmox Home Server, dan email disarikan dari CV **Alfonsus Ronaldy Hidayat**. Foto profil masih placeholder; URL sosial, repository Proxmox, serta endpoint form belum diisi. Pratinjau Proxmox menggunakan screenshot dashboard homelab yang diberikan pemilik. Sertifikat kosong karena tidak tercantum di CV. Nomor telepon, alamat rumah, dan PDF CV belum dipublikasikan.
 
 Poster **GATE — Freelance & Social Impact** menampilkan preview halaman utama, penjelasan prototipe platform freelance berdampak sosial, teknologi, tautan [repository tim](https://github.com/amaliacalista26/GATE_PROJECT), dan stempel **SELESAI**. Status selesai merujuk pada prototipe front-end tugas UTS; backend belum tersedia dan interaksi masih simulasi.
 
@@ -51,6 +51,7 @@ Poster **GATE — Freelance & Social Impact** menampilkan preview halaman utama,
 │   │   ├── project.svg
 │   │   ├── preview.png
 │   │   ├── gate-preview.png
+│   │   ├── proxmox-preview.png
 │   │   └── README.md
 │   └── fonts/
 │       └── .gitkeep
@@ -85,7 +86,7 @@ Komentar placeholder tetap dipertahankan sebagai panduan. Teks tidak dimasukkan 
 
 - [ ] Nama tema, nama lengkap, role, tagline, lokasi.
 - [ ] Dua paragraf tentang saya, caption dan alt foto.
-- [ ] Foto profil dan gambar semua proyek.
+- [ ] Foto profil; pratinjau GATE dan Proxmox sudah tersedia.
 - [ ] Tinjau skill dan level sesuai CV; angka persentase opsional, bukan skor otomatis.
 - [ ] Judul, deskripsi, tech stack, status, URL demo dan GitHub proyek.
 - [ ] Perusahaan, jabatan, periode, deskripsi pengalaman.
@@ -187,6 +188,7 @@ Workflow hanya menyalin `index.html`, `assets/`, `.nojekyll`, dan `LICENSE` ke a
 - [GSAP 3.12.5 dan ScrollTrigger 3.12.5](https://gsap.com/): dimuat melalui jsDelivr; library memiliki [lisensi tersendiri](https://gsap.com/community/standard-license/), tidak dilisensikan ulang sebagai MIT oleh proyek ini.
 - [Formspree](https://formspree.io/): layanan pihak ketiga opsional untuk penerimaan form; kuota mengikuti akun pemilik.
 - `assets/img/preview.png` adalah screenshot portofolio ini. `assets/img/gate-preview.png` bersumber dari `asset/preview-home.png` di [GATE_PROJECT](https://github.com/amaliacalista26/GATE_PROJECT); gambar dan merek di dalamnya mengikuti hak pemilik masing-masing, bukan lisensi MIT kode portofolio.
+- `assets/img/proxmox-preview.png` adalah screenshot dashboard homelab yang diberikan pemilik; merek layanan di dalamnya mengikuti hak pemilik masing-masing.
 - Tidak ada musik, sound effect, atau aset franchise western yang disertakan.
 
 Proyek ini **fan-inspired oleh estetika western sinematik secara umum**, bukan adaptasi aset tertentu, dan **tidak berafiliasi, disponsori, atau didukung pihak mana pun**. Hak cipta karya original tetap ada dan diberikan melalui MIT; font/library mengikuti lisensi masing-masing. Gunakan hanya foto, CV, dan audio yang Anda miliki atau punya izin penggunaan.
