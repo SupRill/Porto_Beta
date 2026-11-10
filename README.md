@@ -8,9 +8,9 @@ Untuk melihatnya, jalankan secara lokal (lihat **Menjalankan lokal**).
 
 ## Preview
 
-![Placeholder poster visual Dusty Trail](assets/img/project.svg)
+![Tampilan awal portofolio: hero dengan lanskap gurun senja](assets/img/preview.png)
 
-Gambar di atas merupakan placeholder original, bukan screenshot situs. Jalankan server lokal untuk melihat lanskap senja, jurnal sepia, inventaris, poster interaktif, peta perjalanan, dan telegram. Identitas, pendidikan, skill dasar, pengalaman ISFEST, proyek Proxmox Home Server, dan email disarikan dari CV **Alfonsus Ronaldy Hidayat**. Foto dan pratinjau proyek masih placeholder; URL sosial, repository, serta endpoint form belum diisi. Sertifikat kosong karena tidak tercantum di CV. Nomor telepon, alamat rumah, dan PDF CV belum dipublikasikan.
+Gambar di atas adalah snapshot tampilan awal (hero) saat portofolio dibuka, diambil pada layar 1440 × 900. Jalankan server lokal untuk melihat lanskap senja, jurnal sepia, inventaris, poster interaktif, peta perjalanan, dan telegram. Identitas, pendidikan, skill dasar, pengalaman ISFEST, proyek Proxmox Home Server, dan email disarikan dari CV **Alfonsus Ronaldy Hidayat**. Foto dan pratinjau proyek masih placeholder; URL sosial, repository, serta endpoint form belum diisi. Sertifikat kosong karena tidak tercantum di CV. Nomor telepon, alamat rumah, dan PDF CV belum dipublikasikan.
 
 ## Fitur
 
@@ -47,6 +47,7 @@ Gambar di atas merupakan placeholder original, bukan screenshot situs. Jalankan 
 │   ├── img/
 │   │   ├── profile.svg
 │   │   ├── project.svg
+│   │   ├── preview.png
 │   │   └── README.md
 │   └── fonts/
 │       └── .gitkeep
