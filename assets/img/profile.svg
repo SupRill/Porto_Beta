@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Placeholder foto profil 600 kali 800">
+  <defs><radialGradient id="paper"><stop stop-color="#c9a96e"/><stop offset="1" stop-color="#66513a"/></radialGradient><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".55" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feBlend in="SourceGraphic" mode="multiply"/></filter></defs>
+  <path fill="url(#paper)" d="M0 0h600v800H0z"/>
+  <g fill="#2b1d12" opacity=".8"><ellipse cx="300" cy="307" rx="87" ry="109"/><path d="M105 705q10-210 115-240l80 65 80-65q105 30 115 240z"/><path d="m230 465 70 65-36 90-63-129zm140 0-70 65 36 90 63-129z" fill="#4a2f1b"/><path d="m195 280 25-101q82-50 163 0l24 101z"/><ellipse cx="300" cy="282" rx="163" ry="25"/></g>
+  <path fill="#e8d5a8" opacity=".09" filter="url(#grain)" d="M0 0h600v800H0z"/>
+  <g fill="none" stroke="#e8d5a8" opacity=".5"><path d="M24 24h552v752H24zM32 32h536v736H32z"/></g>
+  <path fill="#2b1d12" d="M100 718h400v45H100z"/><text x="300" y="747" text-anchor="middle" fill="#e8d5a8" font-size="20">FOTO ANDA / 600 × 800</text>
+</svg>

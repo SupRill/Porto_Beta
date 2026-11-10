@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Placeholder gambar proyek 1200 kali 750">
+  <defs><pattern id="hatch" width="14" height="14" patternUnits="userSpaceOnUse"><path d="M0 14 14 0" stroke="#c9a96e" stroke-width="1"/></pattern></defs>
+  <path fill="#c9a96e" d="M0 0h1200v750H0z"/><path fill="#e8d5a8" d="M35 35h1130v680H35z"/><path fill="url(#hatch)" d="M50 50h1100v650H50z"/>
+  <g stroke="#4a2f1b" fill="none"><path stroke-width="4" d="M80 80h1040v590H80z"/><path stroke-width="2" d="M95 95h1010v560H95z"/><circle cx="600" cy="335" r="128"/><circle cx="600" cy="335" r="114"/><path stroke-width="4" d="m600 230 24 72 77 1-61 47 22 76-62-45-63 45 23-76-61-47 77-1z"/></g>
+  <text x="600" y="535" text-anchor="middle" fill="#2b1d12" font-size="38">PRATINJAU PROYEK</text><text x="600" y="585" text-anchor="middle" fill="#4a2f1b" font-size="23">Ganti dengan karya Anda / 1200 × 750</text>
+</svg>

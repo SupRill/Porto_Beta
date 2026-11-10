@@ -1,0 +1,53 @@
+/* Hallmark · Dusty Trail motion layer · original cinematic effects, shared pause and reduced-motion fallback. */
+#loader { position: fixed; inset: 0; z-index: 90; background: var(--night); color: var(--parchment); display: grid; place-items: center; pointer-events: none; animation: loader-exit .6s 3s forwards; }
+.saloon-door { position: absolute; inset: 0 50% 0 0; background: repeating-linear-gradient(90deg, var(--wood) 0 65px, var(--ink) 66px 69px); border: 8px solid var(--ink); transform-origin: left; }
+.door-right { inset: 0 0 0 50%; transform-origin: right; }
+.loader-copy { position: relative; text-align: center; font: 1rem/1.5 var(--font-label); }
+.loader-star { font-size: 3rem; color: var(--gold); }.loader-copy p { margin: var(--space-lg); }
+.rope { height: 7px; border: 1px dashed var(--parchment-dark); max-width: 240px; margin: auto; }
+.rope span { display: block; height: 100%; background: var(--gold); transform-origin: left; animation: rope-load 1.6s var(--ease) both; }
+.is-opening .door-left { animation: door-left .8s var(--ease) forwards; }
+#loader.is-opening { background: var(--clear); }
+.is-opening .door-right { animation: door-right .8s var(--ease) forwards; }
+.is-opening .loader-copy { opacity: 0; transition: opacity .25s; }
+#cursor { position: fixed; left: 0; top: 0; width: 28px; height: 28px; border: 1px solid var(--parchment-dark); border-radius: 50%; pointer-events: none; z-index: 80; margin: -14px; mix-blend-mode: difference; }
+#cursor::before, #cursor::after { content: ''; position: absolute; background: var(--parchment); }
+#cursor::before { width: 1px; height: 38px; top: -6px; left: 13px; }
+#cursor::after { height: 1px; width: 38px; top: 13px; left: -6px; }
+.bullet-hole { position: fixed; width: 32px; height: 32px; z-index: 75; pointer-events: none; color: var(--ink); transform: translate(-50%,-50%); animation: bullet-fade .65s ease-out forwards; }
+.bullet-hole svg { width: 100%; height: 100%; fill: var(--ink); stroke: var(--parchment-dark); stroke-width: 1.5; }
+.motion-on .grain { animation: grain-shift .3s steps(2) infinite; }
+.grain::after { content: ''; position: absolute; inset: 0 22% 0 auto; width: 1px; background: var(--parchment); opacity: .3; box-shadow: 140px 0 var(--parchment); }
+.motion-on .sun { animation: sun-set 35s ease-in-out infinite alternate; }
+.motion-on .birds { animation: birds-pass 30s linear infinite; }
+.motion-on .tumbleweed-track { animation: tumble-travel 23s linear infinite; }
+.motion-on .tumbleweed { animation: tumble-spin 2.5s linear infinite; }
+.motion-on h1 { animation: ink-flicker 9s linear infinite; }
+.motion-on .stamp.hit { animation: stamp-hit .45s var(--ease) both; }
+.motion-on .poster.shake { animation: stamp-shake .25s linear; }
+.motion-on .site-header.is-sticky { animation: sign-swing .7s var(--ease); }
+.hero-offscreen .landscape *, .page-hidden * { animation-play-state: paused !important; }
+@keyframes rope-load { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes door-left { to { transform: perspective(800px) rotateY(-100deg) translateX(-30%); } }
+@keyframes door-right { to { transform: perspective(800px) rotateY(100deg) translateX(30%); } }
+@keyframes loader-exit { to { opacity: 0; visibility: hidden; } }
+@keyframes sun-set { to { transform: translate(-50%, 28px); } }
+@keyframes birds-pass { from { transform: translateX(350px); } to { transform: translateX(-1100px); } }
+@keyframes tumble-travel { 0%,15% { transform: translateX(0); } 80%,100% { transform: translateX(120vw); } }
+@keyframes tumble-spin { to { transform: rotate(360deg); } }
+@keyframes grain-shift { 0%,100% { transform: translate(0,0); } 50% { transform: translate(2px,-2px); } }
+@keyframes ink-flicker { 0%,95%,97%,100% { opacity: 1; } 96%,98% { opacity: .94; } }
+@keyframes stamp-hit { from { transform: rotate(-12deg) scale(1.6); opacity: 0; } to { transform: rotate(-12deg) scale(1); opacity: .8; } }
+@keyframes stamp-shake { 25% { transform: translateX(-2px) rotate(var(--rotation)); } 75% { transform: translateX(2px) rotate(var(--rotation)); } }
+@keyframes bullet-fade { 0% { opacity: .9; } 100% { opacity: 0; transform: translate(-50%,-50%) scale(1.2); } }
+@keyframes sign-swing { 0% { transform: rotate(-.5deg); } 50% { transform: rotate(.3deg); } 100% { transform: rotate(0); } }
+html.motion-paused { scroll-behavior: auto; }
+.motion-paused *, .motion-paused *::before, .motion-paused *::after { animation: none !important; transition: none !important; }
+.motion-paused .scene { translate: none; }
+.motion-paused .sun-layer { transform: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  #loader, #cursor, #dust, .bullet-hole, .tumbleweed-track { display: none !important; }
+  .poster-inner { transition: none; }
+}

@@ -1,0 +1,15 @@
+# Sistem operasi dan editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# Data lokal, rahasia, dan hasil pemeriksaan
+.env
+.env.*
+!.env.example
+node_modules/
+__pycache__/
+*.log
+.hallmark/
+test-results/
+playwright-report/
