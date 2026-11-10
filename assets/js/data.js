@@ -38,8 +38,9 @@ export const data = {
     { name: 'Bahasa', level: 'Indonesia & Inggris', detail: 'Bahasa yang tercantum di CV; tingkat kefasihan tidak dinyatakan' }
   ],
   // GANTI INI: [[PROJECT_1..N: judul, deskripsi, tech stack, link demo, link GitHub, gambar]]
-  // Proyek berdasarkan CV. Jangan tautkan dashboard/internal homelab ke situs publik.
+  // Proyek berdasarkan CV dan repository pilihan pemilik. Jangan tautkan dashboard/internal homelab ke situs publik.
   projects: [
+    { title: 'GATE — Freelance & Social Impact', category: 'Prototipe front-end · Proyek tim', description: 'Prototipe website freelance yang menghubungkan freelancer, pemberi kerja, dan yayasan melalui konsep pekerjaan berdampak sosial. Memuat halaman lowongan, profil, chat, GATE Pay, serta kegiatan dan donasi yayasan. Prototipe front-end untuk tugas UTS telah selesai; interaksi disimulasikan di browser dan belum terhubung ke backend.', tech: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap 4.3.1'], image: 'assets/img/gate-preview.png', alt: 'Tampilan halaman utama GATE dengan judul Your Gate to Work and Social Impact', demo: '', github: 'https://github.com/amaliacalista26/GATE_PROJECT', completed: true },
     { title: 'Proxmox Home Server', category: 'Homelab & self-hosting', description: 'Home server dari perangkat bekas dengan Proxmox VE. Menjalankan container Linux untuk Tailscale, Docker, AI routing, media streaming, dan Pi-hole DNS. Dashboard Homepage menampilkan metrik serta status layanan; subnet routing dan DNS lokal mendukung akses jarak jauh.', tech: ['Proxmox VE', 'Linux Containers', 'Docker', 'Tailscale', 'Pi-hole', 'Homepage'], image: 'assets/img/project.svg', alt: 'Placeholder pratinjau proyek Proxmox Home Server', demo: '', github: '', completed: false }
   ],
   // GANTI INI: [[PENGALAMAN_1..N: perusahaan, posisi, periode, deskripsi]]
